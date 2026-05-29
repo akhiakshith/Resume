@@ -1,0 +1,172 @@
+%-------------------------
+% ATS-Optimized Resume – Akshith Pachipulusu
+% Compiler: pdflatex
+%-------------------------
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage[
+  top=0.28in, bottom=0.28in,
+  left=0.5in, right=0.5in
+]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{fontawesome5}
+
+\definecolor{accent}{HTML}{1A5276}
+\definecolor{dark}{HTML}{0D1B2A}
+\definecolor{mid}{HTML}{2E4057}
+\definecolor{light}{HTML}{5D6D7E}
+
+\hypersetup{colorlinks=true, urlcolor=accent, hidelinks}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section formatting
+\titleformat{\section}
+  {\vspace{1pt}\color{accent}\bfseries\small}
+  {}{0em}{\MakeUppercase}
+  [\vspace{-3pt}\color{accent}\rule{\linewidth}{0.5pt}\vspace{-5pt}]
+\titlespacing{\section}{0pt}{4pt}{2pt}
+
+% Bullet list settings
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=0pt,
+  parsep=0pt,
+  topsep=1pt,
+  label=\textbullet
+}
+
+% Role header command: \rolerow{Title}{Org · Location}{Dates}
+\newcommand{\rolerow}[3]{%
+  \textbf{#1} \hfill {\small\color{light}#3}\\[-1pt]
+  {\small\color{mid}\textit{#2}}%
+}
+
+\begin{document}
+\enlargethispage{2\baselineskip}
+
+%──────────────────────────────────────────────────────────
+%  HEADER
+%──────────────────────────────────────────────────────────
+{\centering
+  {\Large\bfseries\color{dark} AKSHITH PACHIPULUSU}\\[2pt]
+  {\small\color{light}
+    {\color{accent}\faPhone*}\hspace{2pt} +91 7780697892 \quad\textbullet\quad
+    {\color{accent}\faEnvelope}\hspace{2pt} \href{mailto:akshithakhi25@gmail.com}{akshithakhi25@gmail.com} \quad\textbullet\quad
+    {\color{accent}\faLinkedin}\hspace{2pt} \href{https://www.linkedin.com/in/akshithpachipulusu}{LinkedIn} \quad\textbullet\quad
+    {\color{accent}\faGithub}\hspace{2pt} \href{https://github.com/akhiakshith}{GitHub} \quad\textbullet\quad
+    {\color{accent}\faGlobe}\hspace{2pt} \href{https://akshith-portfolio-tau.vercel.app}{Portfolio}
+  }\\[1pt]
+\par}
+
+%──────────────────────────────────────────────────────────
+%  SUMMARY
+%──────────────────────────────────────────────────────────
+\section{Summary}
+{\small Results-driven CS graduate (Bioinformatics) with hands-on experience delivering data-driven product strategy, growth initiatives, and analytical insights. Oracle-certified Generative AI professional skilled in Python, SQL, and Power BI. Proven ability to translate complex data into actionable business decisions across cross-functional teams.}
+
+%──────────────────────────────────────────────────────────
+%  TECHNICAL SKILLS
+%──────────────────────────────────────────────────────────
+\section{Technical Skills}
+\begin{tabular}{@{} >{\bfseries\small}p{0.22\linewidth} @{\hspace{4pt}} >{\small}p{0.74\linewidth} @{}}
+  Languages \& Tools   & Python, C++, SQL, Pandas, NumPy, Power BI, Excel, Git \\[2pt]
+  AI \& Data           & Machine Learning, RFM Analysis, EDA, Data Visualization, Oracle GenAI \\[2pt]
+  Business \& Strategy & Product Strategy, Market Research, Competitive Analysis, Agile, SEO/GEO, B2B Outreach \\[2pt]
+  Soft Skills          & Stakeholder Management, Team Leadership, Cross-functional Collaboration \\[2pt]
+  Languages            & English (Fluent), Hindi (Native), Telugu (Native) \\
+\end{tabular}
+
+%──────────────────────────────────────────────────────────
+%  WORK EXPERIENCE
+%──────────────────────────────────────────────────────────
+\section{Work Experience}
+
+\rolerow{Business Analyst Intern – Product Strategy \& Growth}%
+        {CEEC Global Ventures (VIT Incubator) · Vellore, India}%
+        {Aug 2025 – Dec 2025}
+\begin{itemize}
+  \item Conducted competitive analysis across \textbf{10+ industry verticals}, surfacing product gaps that directly informed the roadmap for 2 new feature releases.
+  \item Synthesized customer behavior data and user feedback to prioritize a backlog of \textbf{30+ feature requests}, improving sprint planning accuracy by 20\%.
+  \item Served as Product Owner — authored user stories and acceptance criteria that cut rework time by an estimated \textbf{15\%}.
+  \item Drove \textbf{20+ B2B partnership conversations} through targeted outreach; SEO/GEO optimizations lifted organic search visibility by 35\%.
+\end{itemize}
+
+%──────────────────────────────────────────────────────────
+%  PROJECTS
+%──────────────────────────────────────────────────────────
+\section{Projects}
+
+\href{https://github.com/akhiakshith/apexstrategy}{\textbf{ApexStrategy – F1 Telemetry \& Strategy Dashboard}} \hfill {\small\color{light}2026}\\[-1pt]
+{\small\color{light}\textit{Python · Pandas · NumPy · FastF1 · Chart.js}}
+\begin{itemize}
+  \item Built an interactive F1 telemetry dashboard and pit stop optimizer modeling compound-specific tire degradation curves using linear regression.
+  \item Simulated undercut and overcut success rates in real-time using historical lap data to suggest optimal pit strategies.
+\end{itemize}
+
+\vspace{1pt}
+\href{https://github.com/akhiakshith/Dishcovery}{\textbf{Dishcovery – Recipe Recommendation Engine}} \hfill {\small\color{light}May – Jun 2025}\\[-1pt]
+{\small\color{light}\textit{Python · Flask · Pandas}}
+\begin{itemize}
+  \item Shipped a Flask web app serving ranked recipe recommendations from user-supplied ingredients; custom content-based filtering achieved \textbf{>80\% relevance score} in internal testing.
+  \item Cleaned \textbf{5,000+ recipes}, reducing data noise by 40\% and measurably improving recommendation precision.
+\end{itemize}
+
+\vspace{1pt}
+\href{https://github.com/akhiakshith/Automated-Low-Light-Car-Image-Enhancer-}{\textbf{Automated Low-Light Car Image Enhancer}} \hfill {\small\color{light}Oct – Dec 2024}\\[-1pt]
+{\small\color{light}\textit{Python · OpenCV · YOLOv8 · K-Means · CLAHE}}
+\begin{itemize}
+  \item Built a CLAHE + gamma correction + noise reduction pipeline improving perceptual image quality by \textbf{$\sim$45\% (PSNR)} on 200 low-light vehicle images.
+  \item Fused YOLOv8 detection with K-Means clustering for vehicle color profiling at \textbf{92\% detection accuracy}.
+\end{itemize}
+
+%──────────────────────────────────────────────────────────
+%  EDUCATION
+%──────────────────────────────────────────────────────────
+\section{Education}
+
+\rolerow{B.Tech – Computer Science \& Engineering (Bioinformatics)}%
+        {Vellore Institute of Technology (VIT) · Vellore, India}%
+        {2022 – 2026}\\[2pt]
+{\small\color{light}Coursework: Data Structures \& Algorithms, DBMS, OOP, Machine Learning, Bioinformatics}
+
+%──────────────────────────────────────────────────────────
+%  CERTIFICATIONS
+%──────────────────────────────────────────────────────────
+\section{Certifications}
+\begin{tabular}{@{} >{\small}p{0.78\linewidth} @{\hspace{4pt}} >{\small\color{light}\raggedleft\arraybackslash}p{0.18\linewidth} @{}}
+  \textbf{Oracle Cloud Infrastructure 2025 – Generative AI Certified Professional} \newline
+  {\color{light}Oracle University} & Jul 2025 \\[3pt]
+  \textbf{NumPy and SciPy for Data Science} \newline
+  {\color{light}Intellipaat Academy} & May 2026 \\
+\end{tabular}
+
+%──────────────────────────────────────────────────────────
+%  LEADERSHIP
+%──────────────────────────────────────────────────────────
+\section{Leadership \& Extracurricular}
+
+\rolerow{Sponsorship Head \& Board Member – JAAGRUTHI}%
+        {Riveria Cultural Festival, VIT}%
+        {Dec 2022 – Feb 2026}
+\begin{itemize}
+  \item Managed sponsorship acquisition and publicity for 3 annual festivals, leading teams of \textbf{10–15 members} and securing partnerships with 5+ brands.
+\end{itemize}
+
+\vspace{1pt}
+\rolerow{Technical Head – VITMAS}%
+        {Gravitas Technical Festival, VIT}%
+        {Nov 2023 – Feb 2026}
+\begin{itemize}
+  \item Built web apps and automation tools for event operations; mentored \textbf{8+ junior developers} through structured technical training.
+\end{itemize}
+
+\end{document}
