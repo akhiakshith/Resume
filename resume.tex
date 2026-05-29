@@ -5,7 +5,7 @@
 \documentclass[10pt, letterpaper]{article}
 
 \usepackage[
-  top=0.28in, bottom=0.28in,
+  top=0.25in, bottom=0.25in,
   left=0.5in, right=0.5in
 ]{geometry}
 \usepackage{enumitem}
@@ -30,19 +30,19 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
-% Section formatting
+% Section formatting - minimized vertical spacing
 \titleformat{\section}
-  {\vspace{1pt}\color{accent}\bfseries\small}
+  {\vspace{0pt}\color{accent}\bfseries\small}
   {}{0em}{\MakeUppercase}
-  [\vspace{-3pt}\color{accent}\rule{\linewidth}{0.5pt}\vspace{-5pt}]
-\titlespacing{\section}{0pt}{4pt}{2pt}
+  [\vspace{-3.5pt}\color{accent}\rule{\linewidth}{0.5pt}\vspace{-5pt}]
+\titlespacing{\section}{0pt}{3pt}{1.5pt}
 
-% Bullet list settings
+% Bullet list settings - optimized for single-page compaction
 \setlist[itemize]{
   leftmargin=1.2em,
-  itemsep=0pt,
+  itemsep=-0.5pt,
   parsep=0pt,
-  topsep=1pt,
+  topsep=0.5pt,
   label=\textbullet
 }
 
@@ -53,21 +53,21 @@
 }
 
 \begin{document}
-\enlargethispage{2\baselineskip}
+\enlargethispage{3\baselineskip}
 
 %──────────────────────────────────────────────────────────
 %  HEADER
 %──────────────────────────────────────────────────────────
 {\centering
   % Cool geometric Avant Garde font with wide tracking/letter-spacing, sized to LARGE
-  {\LARGE\bfseries\fontfamily{pag}\selectfont\textls[150]{AKSHITH PACHIPULUSU}}\\[3pt]
+  {\LARGE\bfseries\fontfamily{pag}\selectfont\textls[150]{AKSHITH PACHIPULUSU}}\\[1pt]
   {\small\color{light}
     {\color{accent}\faPhone*}\hspace{2pt} +91 7780697892 \quad\textbullet\quad
     {\color{accent}\faEnvelope}\hspace{2pt} \href{mailto:akshithakhi25@gmail.com}{akshithakhi25@gmail.com} \quad\textbullet\quad
     {\color{accent}\faLinkedin}\hspace{2pt} \href{https://www.linkedin.com/in/akshithpachipulusu}{LinkedIn} \quad\textbullet\quad
     {\color{accent}\faGithub}\hspace{2pt} \href{https://github.com/akhiakshith}{GitHub} \quad\textbullet\quad
     {\color{accent}\faGlobe}\hspace{2pt} \href{https://akshith-portfolio-tau.vercel.app}{Portfolio}
-  }\\[1pt]
+  }\\[0pt]
 \par}
 
 %──────────────────────────────────────────────────────────
@@ -83,7 +83,7 @@
 
 \rolerow{B.Tech – Computer Science \& Engineering (Bioinformatics)}%
         {Vellore Institute of Technology (VIT) · Vellore, India}%
-        {2022 – 2026}\\[2pt]
+        {2022 – 2026}\\[1pt]
 {\small\color{light}Coursework: Data Structures \& Algorithms, DBMS, OOP, Bioinformatics}
 
 %──────────────────────────────────────────────────────────
@@ -91,9 +91,9 @@
 %──────────────────────────────────────────────────────────
 \section{Technical Skills}
 \begin{tabular}{@{} >{\bfseries\small}p{0.22\linewidth} @{\hspace{4pt}} >{\small}p{0.74\linewidth} @{}}
-  Languages \& Tools   & Python, C++, SQL, Pandas, NumPy, Power BI, Excel, Git \\[2pt]
-  Business \& Strategy & Product Strategy, Market Research, Competitive Analysis, Agile, SEO/GEO, B2B Outreach \\[2pt]
-  Soft Skills          & Team Leadership, Cross-functional Collaboration \\[2pt]
+  Languages \& Tools   & Python, C++, SQL, Pandas, NumPy, Power BI, Excel, Git \\[1pt]
+  Business \& Strategy & Product Strategy, Market Research, Competitive Analysis, Agile, SEO/GEO, B2B Outreach \\[1pt]
+  Soft Skills          & Team Leadership, Cross-functional Collaboration \\[1pt]
   Languages            & English (Fluent), Telugu (Native), Hindi (Conversational) \\
 \end{tabular}
 
@@ -124,7 +124,7 @@
   \item Simulated undercut/overcut success rates using historical lap data, providing strategists with actionable, data-driven pit window suggestions.
 \end{itemize}
 
-\vspace{1pt}
+\vspace{-1.5pt}
 \href{https://github.com/akhiakshith/Dishcovery}{\textbf{Dishcovery – Recipe Recommendation Engine}} \hfill {\small\color{light}May – Jun 2025}\\[-1pt]
 {\small\color{light}\textit{Python · Flask · Pandas}}
 \begin{itemize}
@@ -132,7 +132,7 @@
   \item Preprocessed a database of \textbf{5,000+ recipes} using Pandas, reducing data noise by \textbf{40\%} to improve recommendation accuracy.
 \end{itemize}
 
-\vspace{1pt}
+\vspace{-1.5pt}
 \href{https://github.com/akhiakshith/Automated-Low-Light-Car-Image-Enhancer-}{\textbf{Automated Low-Light Car Image Enhancer}} \hfill {\small\color{light}Oct – Dec 2024}\\[-1pt]
 {\small\color{light}\textit{Python · OpenCV · YOLOv8 · K-Means · CLAHE}}
 \begin{itemize}
@@ -146,7 +146,7 @@
 \section{Certifications}
 \begin{tabular}{@{} >{\small}p{0.78\linewidth} @{\hspace{4pt}} >{\small\color{light}\raggedleft\arraybackslash}p{0.18\linewidth} @{}}
   \href{https://github.com/akhiakshith/Resume/blob/main/Oracke\%20AI\%20Certificate.pdf}{\textbf{Oracle Cloud Infrastructure 2025 – Generative AI Certified Professional}} \newline
-  {\color{light}Oracle University} & Jul 2025 \\[3pt]
+  {\color{light}Oracle University} & Jul 2025 \\[1.5pt]
   \href{https://github.com/akhiakshith/Resume/blob/main/Intellipact\%20certificate.pdf}{\textbf{NumPy and SciPy for Data Science}} \newline
   {\color{light}Intellipaat Academy} & May 2026 \\
 \end{tabular}
@@ -163,7 +163,7 @@
   \item Directed a sponsorship acquisition team of \textbf{15+ members} for 3 national-level festivals, securing brand partnerships and funding.
 \end{itemize}
 
-\vspace{1pt}
+\vspace{-1.5pt}
 \rolerow{Technical Head – VITMAS}%
         {Gravitas Technical Festival, VIT}%
         {Nov 2023 – Feb 2026}
